@@ -1,0 +1,53 @@
+
+.window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;    
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 0;
+  background-color: #1e1e1e; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+  .nav {
+    display: flex;
+    align-items: center;
+    background-color: #323232;
+    padding: 10px;
+    cursor: move; 
+    position: relative;
+
+    .dots {
+      display: flex;
+      gap: 7px;
+      position: absolute;
+      left: 10px;
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        
+        &.red { background-color: #ff5f56; cursor: pointer; }
+        &.yellow { background-color: #ffbd2e; }
+        &.green { background-color: #27c93f; }
+      }
+    }
+
+    .title {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    min-height: 0;
+    padding: 15px;
+    color: #fff;
+    overflow-y: auto;
+  }
+}

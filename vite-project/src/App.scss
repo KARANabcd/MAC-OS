@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* You must make the HTML and Body 100% tall first */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  height: 100vh; /* Now this will work because body has a height */
+  overflow: hidden;
+  position: relative;
+  background-image: url(/public/mac-wallpaper.jpg);
+  background-size: cover;
+}
